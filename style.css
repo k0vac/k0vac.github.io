@@ -33,7 +33,17 @@ li img {
 li img:hover {
     filter:invert(0.8);
 }
-
+#buildnum {
+    position:absolute;
+    width:99%;
+    height: 1%;
+    text-align: right;
+    color:#1A1A1A;
+}
+#info {
+    max-width: 400px;
+    min-width: 400px;
+}
 a {text-decoration: none; color:aqua;}
 a:visited {color:#9F9FFF; text-decoration: none;}
 a.link:hover {color:black; background-color: aqua;}
@@ -50,15 +60,5 @@ a.link:hover {color:black; background-color: aqua;}
     line-height: 1.15;
 }
 
-#buildnum {
-    position:absolute;
-    width:99%;
-    height: 1%;
-    text-align: right;
-    color:#1A1A1A
-}
 
-#info {
-    max-width: 400px;
-    min-width: 400px;
-}
+
