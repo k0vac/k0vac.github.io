@@ -44,7 +44,7 @@ li img:hover {
     max-width: 400px;
     min-width: 400px;
 }
-a {text-decoration: none; color:aqua;}
+a {text-decoration: none; color:#9F9FFF;}
 a:visited {color:#9F9FFF; text-decoration: none;}
 a.link:hover {color:black; background-color: aqua;}
 #mainlist {list-style-type: none; }
