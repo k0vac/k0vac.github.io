@@ -50,6 +50,14 @@ a.link:hover {color:black; background-color: aqua;}
     line-height: 1.15;
 }
 
+#buildnum {
+    position:absolute;
+    width:99%;
+    height: 1%;
+    text-align: right;
+    color:#1A1A1A
+}
+
 #info {
     max-width: 400px;
     min-width: 400px;
