@@ -1,7 +1,10 @@
+
+
 html {
     font-family:'Roboto Condensed', sans-serif; 
-    color:white; 
-    background-color:#0A0A0A;
+    color:white;
+    background-color: #101010;
+
 }
 #main {padding-top: 10px;}
 
@@ -54,10 +57,17 @@ a.link:hover {color:black; background-color: aqua;}
 #projectlist{
     font-size:24px;
     line-height: 0.5;
+    transition: ease 0.5s;
+    margin-left: 10%;
 }
 #projectlist p{
     font-size:16px;
     line-height: 1.15;
+}
+
+#projectlist a:hover{
+    transition: ease 0.1s;
+    margin-left:1%;
 }
 
 
