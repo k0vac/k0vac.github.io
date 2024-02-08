@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+
 html {
     margin: 0,0,0,0;
     padding: 0,0,0,0;
-    -webkit-font-smoothing: antialiased !important;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    font-smooth: antialiased;
 }
 
 body {
@@ -37,7 +38,7 @@ h1 {
 .backdrop {
     background-color: #050505;
     color:white;
-    font-family: monospace;
+    font-family: 'Inconsolata',monospace;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -69,7 +70,6 @@ h1 {
 }
 
 .titleSection div img {
-
     filter:invert(100)
 }
 
