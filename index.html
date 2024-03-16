@@ -1,70 +1,222 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>Veljko Kovacevic - Software Dev</title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veljko Kovacevic</title>
+  <!-- Bootstrap CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+        background: url(grainer3.png), linear-gradient(0deg, #181818, #101010);
+        background-blend-mode:multiply;
+        font-family: 'Alexandria'
+    }
+    #cont {
+        color:  #cccccc;
+    }
 
-    <body>
-        <div class="backdrop">
+    .card {
+      background-color: #181818;
+    }
 
-                <div class="titleSection">
-                <h1>Veljko Kovačević</h1>
-                <h2>Software Developer</h2>
-                <div>
-                    <br>
-                    <a href="https://www.github.com/k0vac/"><img src="img/github.svg"></img></a>
-                    <a href="https://www.linkedin.com/in/veljko-kovacevic/"><img src="img/linkedin.svg"></img></a>
-                    <br><br>
-                    <p><span id="email">veljkokovacevicbiz@gmail.com</span></p><br>
-                </div>
+    .content {
+        background: url("grainer3.png"), linear-gradient(0deg, #141414, #181818);
+        background-size: auto;
+        background-repeat: repeat;
+        background-blend-mode: multiply;
+        padding: 20px;
+        
+    }
 
-                <div id="info">
-                    <p>I'm a student based in Zrenjanin, Serbia pursuing a degree and career in Software Engineering. I have worked generally in C/C++, C#, HTML/CSS/JS. Also worked on projects involving NodeJS, PHP alongside communicating with RESTful APIs. I have some experience in the Unity Engine and managing VPS cloud machines to run dedicated server software.</p>
-                    <br>
-                </div>
+    .content h2{
+        padding-top: 20px;
+    }
 
-            </div>
-            <div class="stack">
-                <div>
-                <img src="svgs/njs2.svg" id="nodeimg"></img>
-                <img src="svgs/csharp.svg"></img>
-                <img src="svgs/cpp.svg"></img>
-                <img src="svgs/php.svg"></img>            
-                </div>
-            </div>
+    .card-link {
+      color: #1fb16d;
+    }
 
-            <div class="projects">
-                <h2>Projects I Worked On</h2>
-                <h3><a href="https://play.google.com/store/apps/details?id=com.LANSlashZrenjanin.InvaderDuels">Invader Duels</a> <span>C# | Unity</span></h3>
-                <p>A Game made in the Unity Engine. Featuring use of C#, Unity and Integration of an Advertising API.</p>
+    h5 {
+        color: #dcdcaa;
+        margin-bottom: 20px;
+    }
 
-                <br>
-                <h3><a href="https://github.com/Jade3375/Asuna/tree/dev">Asuna</a> <span>JavaScript | NodeJS</span></h3>
-                <p>Multi-Use Discord Bot Responsible for serving over 7000 Discord servers with moderational, music streaming and social interaction commands. I worked on migrating functions to a new interactive system which required communicating with the Discord RESTful API, certain image endpoints and handling asynchronous events in real time.</p>
+    .codeblock {
+        font-family: 'Ubuntu Mono';
+        margin: 10px;
+        border-radius: 5px;
+        padding: 20px;
+        background-color: #1f1f1f;
+        color: #ce9178;
+    }
 
-                <br>
-                <h3><a href="https://github.com/k0vac/yamlerSL">YAMLERSL</a> <span>C++</span></h3>
-                <p>Primitive YAML parser made in C++, made from scratch. Was used to demonstrate a fundamental parser for a vague standard for storing data as a High School coursework project.</p>
+    h6  {
+        color: #9cdcfe;
+    }
 
-                <br>
-                <h3><a href="https://github.com/k0vac/omicron">Omicron</a> <span>C# | WinForms</span></h3>
-                <p>Server configuration file generator for SCP: Secret Laboratory server software. Made in C# using Windows Forms. Automated manual editing of internal configuration files with an interactive GUI.</p>
+    .list-group-item {
+        background-color: #1f1f1f;
+        border-color: #2f2f2f;
+        color: #cccccc;
+    }
+    .badge {
+        margin-left: 5px;
+        background-color:#cccccc;
+        color:#181818;
+    }
+    
+    .fr {
+        float:right;
+    }
 
-                <br>
-                <h3><a href="https://github.com/k0vac/SongBatcher">SongBatcher</a> <span>C# | WPF | FFMPEG</span></h3>
-                <p>SongBatcher was made to allow users to select multiple MP4 files and convert them into MP3s in large batches in a lightweight package. Was an experiment with Windows Presentation Foundation and integrating 3rd party utilities into a wrapper.</p>
+    .content a img{
+        filter: invert(1);
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div id="cont" class="col-sm-8 col">
+        <div class="content">
+            <h2>Veljko Kovačević</h2>
+            <h5>Software Developer</h5>
+            <a href="https://github.com/k0vac"><img src="img/github.svg"></img></a>
+            <a href="https://www.linkedin.com/in/veljko-kovacevic/"><img src="img/linkedin.svg"></img></a>
+            <span class="badge">veljkokovacevicbiz@gmail.com</span>
+            <a href="cv.pdf"><img src="img/cv.svg"></img></a>
+          <p class="col-sm-8 col codeblock">"I'm a developer based in Zrenjanin, Serbia pursuing a degree and career in Software Engineering. 
+            I have worked generally in C#, Javascript, Python. Also worked on projects involving NodeJS, PHP alongside communicating with RESTful APIs. 
+            I have some experience in the Unity Engine and managing VPS cloud machines to run dedicated server software."</p>
+          <hr>
+          <h5>Skills</h5>
+          <h6>Software Development</h6>
+          <ul class="list-group">
+            <li class="list-group-item">Python
+                <span class="badge bg-success text-white">Proficient</span>
+                <span class="badge fr">Flask</span>
+                <span class="badge fr bg-success text-white">Django</span>
+            </li>
+            <li class="list-group-item">C#
+                <span class="badge bg-success text-white">Proficient</span>
+                <span class="badge fr bg-primary text-white">ASP.NET Core</span>
+                <span class="badge fr">WPF</span>
+                <span class="badge fr">Unity</span>
+            </li>
+            <li class="list-group-item">JavaScript
+                <span class="badge bg-success text-white">Proficient</span>
+                <span class="badge fr bg-success text-white">Vue.js</span>
+                <span class="badge fr bg-success text-white">NodeJS</span>
+                <span class="badge fr bg-primary text-white">jQuery</span>
+                <span class="badge fr">MV3</span>
+            </li>
+            <li class="list-group-item">Java
+                <span class="badge bg-success text-white">Proficient</span>
+                <span class="badge fr">Swing</span>
+                <span class="badge fr">Spring</span>
+            </li>
+            <li class="list-group-item">PHP
+                <span class="badge bg-success text-white">Proficient</span>
+                <span class="badge fr bg-danger text-white">Laravel</span>
+            </li>
+          </ul>
+          <br>
+          <h6>System Administration</h6>
+          
+          <ul class="list-group">
+            <li class="list-group-item">Bash Scripting
+                <span class="badge bg-success text-white">Proficient</span>
+            </li>
+            <li class="list-group-item">Docker
+                <span class="badge bg-success text-white">Proficient</span>
+            </li>
+            <li class="list-group-item">Nginx
+                <span class="badge bg-success text-white">Proficient</span>
+            </li>
+          </ul>
+          <br>
+          <h6>Digital Content Creation</h6>
+          
+          <ul class="list-group">
+            <li class="list-group-item">Adobe Photoshop
+                <span class="badge bg-success text-white">Proficient</span>
+            </li>
+            <li class="list-group-item">Adobe Premiere Pro
+                <span class="badge bg-success text-white">Proficient</span>
+            </li>
+            <li class="list-group-item">Adobe Illustrator
+                <span class="badge bg-success text-white">Proficient</span>
+            </li>
+          </ul>
+
+        <hr>
+          <h5>Projects</h5>
+          <div class="card text-white">
+            <div class="card-body">
+              <h5 class="card-title">Journey-Buster 3
                 
-                <br>
-                <h3><a href="https://github.com/k0vac/KDB">KDB</a> <span>C++ | ASIO</span></h3>
-                <p>Homebrewn Key-Value Database Management system programmed from scratch. Goal of project is to develop a standalone database system.</p>
+              </h5>
+              <h6 class="card-subtitle mb-2">
+                <span class="badge bg-success text-white">JavaScript (NodeJS, MV3)</span>
+                <span class="badge bg-warning">Python (Flask, FastAPI)</span>
+                <span class="badge bg-primary text-white">C# (WPF)</span>
+                <span class="badge bg-success text-white">MongoDB</span>
+              </h6>
+              <p class="card-text">
+                A Manifest 3 Chrome Extension geared towards blacklisting specific Twitter profiles found to be using content fabricated by artificial intelligence.
+                <br>Features a JavaScript front-end complemented with a homebrew back-end API using a combination of NodeJS and Flask/FastAPI managed with a WPF Panel.
+              </p>
+              <a target="_blank" href="https://journeybuster.com" class="card-link">Website</a>
             </div>
+          </div>
 
+          <br>
 
-            <div class="filler"></div>
-        
-        
+          <div class="card text-white">
+            <div class="card-body">
+              <h5 class="card-title">Asuna</h5>
+              <h6 class="card-subtitle mb-2">
+                <span class="badge bg-success text-white">JavaScript (NodeJS)</span>
+                <span class="badge bg-success text-white">MongoDB</span>
+              </h6>
+
+              <p class="card-text">
+                Multi-Use Discord Bot Responsible for serving over 7000 Discord servers with moderational, music streaming and social interaction commands. 
+                I worked on migrating functions to a new interactive system which required communicating with the Discord RESTful API, 
+                certain image endpoints and handling asynchronous events in real time.
+              </p>
+              <a target="_blank" href="https://github.com/Jade3375/Asuna" class="card-link">Repository</a>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="card text-white">
+            <div class="card-body">
+              <h5 class="card-title">SpotSong X</h5>
+              <h6 class="card-subtitle mb-2">
+                <span class="badge bg-primary text-white">C# (WPF)</span>
+              </h6>
+
+              <p class="card-text">
+                A process reading tool used to extract meta data from media players to be used in other applications for relevant applications. 
+              </p>
+              <a target="_blank" href="https://github.com/k0vac/SpotSongX" class="card-link">Repository</a>
+            </div>
+          </div>
+
+          
+
         </div>
-    </body>
+      </div>
+    </div>
+  </div>
 
-
+</body>
 </html>
